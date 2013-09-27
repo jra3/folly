@@ -68,7 +68,6 @@ nobase_follyinclude_HEADERS = \
 	io/IOBuf.h \
 	io/IOBufQueue.h \
 	io/TypedIOBuf.h \
-	io/Compression.h \
 	io/RecordIO.h \
 	json.h \
 	Lazy.h \
@@ -150,7 +149,14 @@ libfolly_la_SOURCES = \
 	String.cpp \
 	Bits.cpp \
 	SpookyHashV1.cpp \
-	SpookyHashV2.cpp
+	SpookyHashV2.cpp \
+	File.cpp \
+	FileUtil.cpp \
+	MemoryMapping.cpp \
+	Subprocess.cpp \
+	io/IOBuf.cpp \
+	io/IOBufQueue.cpp \
+	io/RecordIO.cpp
 
 libfolly_la_LIBADD = $(BOOST_THREAD_LIB) -lpthread
 
